@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowCraft | Customize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../A_logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navigation-bar">
+        <div class="logo" id="ShadowCraft-main">
+            <img src="../shadow-craft_logo.png" alt="">
+        </div>
+        
+        <div class="share" id="toggle-share-cont">
+            <small >Share</small>
+            <ion-icon name="share-outline"></ion-icon>
+        </div>
+
+        <!-- share-link -->
+        <div class="share-category" id="share-category">
+            
+            <div class="share-link-holder">
+                <div class="close-share-cont" id="close-share-cont">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+                <h3>Thank you for sharing</h3>
+                <div class="social-share">
+                    <span class="fb"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span class="twit"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span class="linked"><ion-icon name="logo-linkedin"></ion-icon></span>
+                </div>
+                <div class="link-cont">
+                    <input type="text" readonly id="ShadowCraft">
+                    <span id="copy-Link"><ion-icon name="copy-outline"></ion-icon></span>
+                </div>
+                <small id="link-copied"></small>
+            </div>
+        </div>
+       
+    </div>
+
+
+    <div class="m-container">
+
+        <div class="about">
+            <h1>Custom Box Shadow Craft</h1>
+            <p>Shadow Craft, created by the talented individual Daniel Abellana, is a remarkable platform where you can easily replicate various styles of box shadows.<br><br> This innovative tool allows you to explore and experiment with different box shadow designs for your web projects. Shadow Craft was just brought to life yesterday, promising to be a valuable resource for web designers and developers seeking creative shadow solutions.</p>
+        </div>
+
+        <div class="customize-cont">
+
+            <div class="coming-soon">
+                <h1>Coming soon</h1>
+            </div>    
+
+        </div>
+
+
+        <div class="scroll-top" id="arrow-up">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="../shadow-craft_logo.png" alt="">
+                </div>
+                <div class="newsletter footer-cont">
+                    <h3>Be the first to get the new update</h3>
+                    <div class="subscribe-cont">
+                        <input type="text" placeholder="Enter your email">
+                        <button>Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copywrited">
+                <div class="year">
+                    Copyright © 2023 - <span id="year">---</span>
+                </div> 
+                <script>
+                    let currentDate = new Date();
+                    let year = currentDate.getFullYear();
+                    document.getElementById('year').textContent = year;
+                </script> 
+                All rights reserved | This template is made with <ion-icon name="heart" style="margin: 0 10px;"></ion-icon>  by Daniel Abellana
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+
+<script src="../js/script.js"></script>
+<script src="./custome.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+
+</script>
+</html>
