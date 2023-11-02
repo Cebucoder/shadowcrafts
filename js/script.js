@@ -121,13 +121,3 @@ copyLinkButton.addEventListener('click', () => {
     // Deselect the input field
     inputElement.setSelectionRange(0, 0);
 });
-
-let ShadowCraftMain = document.getElementById('ShadowCraft-main');
-let customize = document.getElementById('customize');
-ShadowCraftMain.addEventListener('click', () => {
-    window.location.href = "/";
-});
-
-customize.addEventListener('click', () => {
-    window.location.href = "../customize";
-});
