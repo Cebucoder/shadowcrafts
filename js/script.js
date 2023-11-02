@@ -1,6 +1,5 @@
 const boxes = document.querySelectorAll('.box');
 
-// Loop through each box and set its content to its index + 1
 boxes.forEach((box, index) => {
     box.innerHTML = '# ' + (index + 1);
 });
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.execCommand('copy');
         document.body.removeChild(tempTextArea);
 
-        // Provide visual feedback (e.g., change the content)
         box.innerHTML = 'Copied!';
 
         setTimeout(() => {
