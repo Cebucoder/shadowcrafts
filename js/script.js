@@ -125,10 +125,9 @@ copyLinkButton.addEventListener('click', () => {
 let ShadowCraftMain = document.getElementById('ShadowCraft-main');
 let customize = document.getElementById('customize');
 ShadowCraftMain.addEventListener('click', () => {
-    window.history.back();
-
+    window.location.href = "/";
 });
 
 customize.addEventListener('click', () => {
-     window.location.href = "customize/";
+    window.location.href = "../customize";
 });
