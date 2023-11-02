@@ -1,4 +1,3 @@
-// Select all elements with the class "box"
 const boxes = document.querySelectorAll('.box');
 
 // Loop through each box and set its content to its index + 1
@@ -9,16 +8,13 @@ boxes.forEach((box, index) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all elements with the class "box"
     const boxes = document.querySelectorAll('.box');
 
-    // Function to copy the box-shadow style to the clipboard
     function copyBoxShadowStyle(event, index) {
         const box = event.currentTarget;
         const computedStyle = getComputedStyle(box);
         const boxShadowStyle = computedStyle.boxShadow;
 
-        // Create a temporary text area to copy the style
         const tempTextArea = document.createElement('textarea');
         tempTextArea.value = `box-shadow: ${boxShadowStyle};`;
         document.body.appendChild(tempTextArea);
