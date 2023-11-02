@@ -129,5 +129,5 @@ ShadowCraftMain.addEventListener('click', () => {
 });
 
 customize.addEventListener('click', () => {
-    window.location.href = "customize/";
+    window.location.replace("../customize/");
 });
