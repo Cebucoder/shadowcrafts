@@ -86,7 +86,6 @@ document.addEventListener('keydown', (event) => {
 
 // get the url on the browser
 const currentURL = window.location.href;
-console.log(currentURL);
 document.getElementById('ShadowCraft').value = currentURL;
 
 // copy the link
@@ -115,3 +114,8 @@ copyLinkButton.addEventListener('click', () => {
     // Deselect the input field
     inputElement.setSelectionRange(0, 0);
 });
+
+console.log(
+    '%cHello Shadow Craft User!',
+    'background: black; color: white; font-size: 20px; padding: 10px;'
+  );
