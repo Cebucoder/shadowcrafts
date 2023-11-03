@@ -1,6 +1,4 @@
-/* .customize-cont{
-    padding: 70px 15px;
-} */
+
 /* .coming-soon{
     width: 100%;
     height: 200px;
@@ -16,7 +14,7 @@
 .customize-cont{
     width: 100%;
     height: auto;
-    padding: 40px 15px;
+    padding: 40px;
 }
 .control-preview{
     width: 100%;
@@ -286,6 +284,9 @@ outline: none; /* Remove the default focus border */
     .preview-box{
         width: 200px;
         height: 200px;
+    }
+    .customize-cont{
+        padding: 40px 15px;
     }
 }
 
