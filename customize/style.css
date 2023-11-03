@@ -1,7 +1,7 @@
-.customize-cont{
+/* .customize-cont{
     padding: 70px 15px;
-}
-.coming-soon{
+} */
+/* .coming-soon{
     width: 100%;
     height: 200px;
     display: flex;
@@ -11,4 +11,306 @@
     background: rgb(253,29,29);
     background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
     border-radius: 10px;
+} */
+
+.customize-cont{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+.control-preview{
+    width: 100%;
+    padding: 30px 15px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+.controls-cont{
+    width: 50%;
+    min-height: 400px;
+    height: auto;
+    padding: 8px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.control-header{
+    padding-bottom: 10px;
+    color: #5c5757;
+}
+.control-header h3{
+    font-weight: 500;
+}
+.control-content{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    /* background: #fff; */
+    border-radius: 5px;
+    position: relative;
+    border: .5px solid rgba(253, 29, 29, 0.479);
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.control-content label{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #5c5757;
+
+}
+.control-content input{
+    width: 100%;
+}
+
+/* =================================================== */
+/* Customize the range input */
+input[type="range"] {
+    /* Remove the default styles */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the thumb (slider handle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border:1px solid rgb(253,29,29);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+}
+input[type="range"]::-webkit-slider-thumb:hover{
+    transform: scale(1.1);
+}
+
+
+/* Style the thumb on other browsers */
+input[type="range"]::-moz-range-thumb {
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border:1px solid rgb(253,29,29);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    
+}
+
+/* Style the track as desired (e.g., track color when not selected) */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+    height: 10px;
+}
+
+/* Style the track on other browsers */
+input[type="range"]::-moz-range-track {
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+    height: 10px;
+    
+}
+
+/* Target the color input element */
+input[type="color"] {
+width: 100%; /* Set the desired width for the color input */
+height: 30px; /* Set the desired height for the color input */
+border: none; /* Add a border to the input */
+border-radius: 5px; /* Make it a circle */
+cursor: pointer;
+outline: none; /* Remove the default focus border */
+}
+
+/* Customize the appearance when hovered */
+/* input[type="color"]:hover { */
+/* border:1px solid #ff5733; Change the border color on hover */
+/* } */
+/* =================================================== */
+
+.inset{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+}
+.inset-circ{
+    width: 28px;
+    height: 16px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+    position: absolute;
+    left: 3px;
+    transition: 0.3s;
+}
+.inset-circ-toggle{
+    left: 28px;
+}
+.inset-circ:hover{
+    transform: scale(0.88);
+    cursor: pointer;
+}
+.inset-circ:active{
+    width: 32px;
+}
+.inset-cont{
+    padding: 0;
+}
+.inset-header small{
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #5c5757;
+}
+
+.preview-cont{
+    width: 50%;
+    min-height: 480px;
+    height: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.preview-box{
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.preview-header{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    color: #5c5757;
+    padding-top: 10px;
+}
+.preview-header h3{
+    font-weight: 500;
+}
+
+.style-cont{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background: #fff;
+    border:1px solid lightgray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.style-cont:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 40px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.style-cont h3{
+    font-weight: 500;
+    color: #003;
+
+}
+.result-header{
+    padding-top: 30px;
+}
+.result-header h3{
+    font-weight: 500;
+    color: #5c5757;
+}
+.result-header p{
+    font-size: 13px;
+}
+.style-cont:active{
+    transform: scale(0.98);
+    background: #f7f7f7;
+}
+
+@media (max-width:800px){
+    .preview-box{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:700px){
+    .control-preview{
+        flex-direction: column;
+    }
+    .controls-cont{
+        width: 100%;
+    }
+    .preview-cont{
+        width: 100%;
+    }
+}
+
+@media (max-width:544px){
+    .customize-cont{
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width:400px){
+    .preview-cont{
+        height: auto;
+    }
+}
+@media (max-width:400px){
+    .control-content{
+        margin: 10px 0;
+        height: 45px;
+    }
+    .controls-cont{
+        padding: 8px 5px;
+    }
+    .preview-cont{
+        min-height: 200px;
+        padding: 0px;
+        border-top: .5px solid #333;
+    }
+    .style-cont h3{
+        font-size: 13px;
+    }
+    .preview-box{
+        width: 100px;
+        height: 100px;
+    }
+    .preview-header{
+        font-size: 13px;
+    }
+    .control-preview{
+        padding: 10px;
+    }
 }

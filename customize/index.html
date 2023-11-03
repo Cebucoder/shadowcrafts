@@ -11,32 +11,6 @@
     <link rel="icon" type="image/png" href="../A_logo.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
-    <!-- facebook -->
-    <meta name="description" content="191 Custom Box Shadow Craft ,Shadow Craft, created by the talented individual Daniel Abellana, is a remarkable platform where you can easily replicate various styles of box shadows. This innovative tool allows you to explore and experiment with different box shadow designs for your web projects. Shadow Craft was just brought to life yesterday, promising to be a valuable resource for web designers and developers seeking creative shadow solutions.">
-    <meta name="keywords" content="keyword1, keyword2, keyword3"><!--luck-->
-    <link rel="canonical" href="https://www.yourwebsite.com/your-page"><!--luck-->
-    <meta name="author" content="Daniel Llamedo Abellana">
-    <meta property="og:title" content="Shadow Crafts">
-    <meta property="og:description" content="191 Custom Box Shadow Craft">
-    <meta property="og:image" content="https://shadowcrafts.vercel.app/shadow-craft_logo.png">
-    <meta property="og:url" content="https://shadowcrafts.vercel.app/"><!--luck-->
-    <!-- twitter -->
-    <meta name="twitter:card" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
-    Discover Shadow Craft, a visionary creation by the talented mind of Daniel Abellana. Shadow Craft offers an unparalleled platform to effortlessly emulate a wide array of box shadow styles. This innovative tool empowers you to explore and experiment with diverse box shadow designs, unleashing your creative potential for web projects. Excitingly, Shadow Craft emerged just yesterday, marking its debut as a promising resource for web designers and developers in pursuit of imaginative shadow solutions.">
-    <meta name="twitter:site" content="@yourtwitterhandle"><!--luck-->
-    <meta name="twitter:title" content="Shadow Crafts">
-    <meta name="twitter:description" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
-    Discover Shadow Craft, a visionary creation by the talented mind of Daniel Abellana. Shadow Craft offers an unparalleled platform to effortlessly emulate a wide array of box shadow styles. This innovative tool empowers you to explore and experiment with diverse box shadow designs, unleashing your creative potential for web projects. Excitingly, Shadow Craft emerged just yesterday, marking its debut as a promising resource for web designers and developers in pursuit of imaginative shadow solutions.">
-    <meta name="twitter:image" content="https://shadowcrafts.vercel.app/shadow-craft_logo.png"><!--luck-->
-    <!-- linkedin -->
-    <meta property="og:image" content="https://shadowcrafts.vercel.app/shadow-craft_logo.png"><!--luck-->
-    <meta property="article:author" content="https://www.linkedin.com/in/daniel-abellana/"><!--luck-->
-    <meta property="article:publisher" content="https://www.linkedin.com/in/daniel-abellana/"><!--luck-->
-    <!-- instagram -->
-    <meta property="og:image" content="https://shadowcrafts.vercel.app/shadow-craft_logo.png"><!--luck-->
-    <meta property="og:title" content="Shadow Crafts"><!--luck-->
-    <meta property="og:description" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
-    Discover Shadow Craft, a visionary creation by the talented mind of Daniel Abellana. Shadow Craft offers an unparalleled platform to effortlessly emulate a wide array of box shadow styles. This innovative tool empowers you to explore and experiment with diverse box shadow designs, unleashing your creative potential for web projects. Excitingly, Shadow Craft emerged just yesterday, marking its debut as a promising resource for web designers and developers in pursuit of imaginative shadow solutions."><!--luck-->
 </head>
 <body>
 
@@ -86,9 +60,65 @@
 
         <div class="customize-cont">
 
-            <div class="coming-soon">
-                <h1>Coming soon</h1>
-            </div>    
+
+                <div class="control-preview">
+        
+                    <div class="controls-cont">
+        
+                        <div class="control-header">
+                            <h3>Controls</h3>
+                        </div>
+        
+                        <div class="control-content">
+                            <label>Box Shadow Color</label>
+                            <input type="color" id="color" value="#bababa">
+                        </div>
+                        <div class="control-content">
+                            <label>Horizontal Position</label>
+                            <input type="range" id="horizontal" min="-50" max="50" step="1" value="5">
+                        </div>
+                        <div class="control-content">
+                            <label>Vertical Position</label>
+                            <input type="range" id="vertical" min="-50" max="50" step="1" value="5">
+                        </div>
+                        <div class="control-content">
+                            <label>Blur Amount</label>
+                            <input type="range" id="blur" min="0" max="50" step="1" value="10">
+                        </div>
+                        <div class="control-content">
+                            <label>Opacity</label>
+                             <input type="range" id="opacity" min="0" max="1" step="0.01" value="0.3">
+                        </div>
+                        <div class="inset-cont">
+                            <div class="inset-header">
+                                <small>Add inset</small>
+                            </div>
+                            <div class="inset" id="toggle-inset">
+                                <div class="inset-circ" id="inset-circ"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="preview-cont">
+                        <div class="preview-header">
+                            <h3>Preview</h3>
+                        </div>
+                        <div class="preview-box" id="preview-box"></div>
+                    </div>
+        
+                </div>
+        
+                <div class="result-header">
+                    <h3>Result</h3>
+                    <p>Click the box below to copy the code</p>
+                </div>
+        
+                <div class="style-cont">
+                    <h3 id="shadow-result">
+                        
+                    </h3>
+                </div>
+        
 
         </div>
 
@@ -134,8 +164,8 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+
 <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+
 </script>
-<script defer src="/_vercel/insights/script.js"></script>
 </html>
