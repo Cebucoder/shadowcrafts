@@ -311,7 +311,7 @@ outline: none; /* Remove the default focus border */
         font-size: 13px;
     }
     .control-preview{
-        padding: 10px 0;
+        padding: 10px 10px;
     }
     .customize-cont{
         padding:10px 0;
