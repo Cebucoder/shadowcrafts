@@ -53,14 +53,13 @@ let insetButton = document.getElementById('toggle-inset');
         const copiedText = shadowResult.textContent;
     
         // Provide feedback to the user
-        shadowResult.textContent = "Successfully copied!";
-        shadowResult.style.color = "#fd1d1d";
+        let SuccessCopied = document.getElementById('success-copied');
+        SuccessCopied.style.display ="flex";
         
         // Reset the text after 2 seconds
         setTimeout(() => {
+            SuccessCopied.style.display ="none";
             shadowResult.textContent = copiedText;
-        shadowResult.style.color = "#003";
-    
         }, 2000);
     
         // Log a message to the console
