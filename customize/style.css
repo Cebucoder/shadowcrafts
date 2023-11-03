@@ -311,6 +311,6 @@ outline: none; /* Remove the default focus border */
         font-size: 13px;
     }
     .control-preview{
-        padding: 10px;
+        padding: 10px 0;
     }
 }
