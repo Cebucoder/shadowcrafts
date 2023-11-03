@@ -142,6 +142,18 @@ cursor: pointer;
 outline: none; /* Remove the default focus border */
 }
 
+.px{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-left: 10px;
+    color: #002;
+    background: #fff;
+}
+
 /* Customize the appearance when hovered */
 /* input[type="color"]:hover { */
 /* border:1px solid #ff5733; Change the border color on hover */
