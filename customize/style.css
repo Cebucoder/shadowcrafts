@@ -149,8 +149,8 @@ outline: none; /* Remove the default focus border */
 /* =================================================== */
 
 .inset{
-    width: 60px;
-    height: 20px;
+    width: 63px;
+    height: 30px;
     border-radius: 10px;
     background: rgb(253,29,29);
     background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
@@ -161,8 +161,8 @@ outline: none; /* Remove the default focus border */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
 }
 .inset-circ{
-    width: 28px;
-    height: 16px;
+    width: 31px;
+    height: 25px;
     border-radius: 10px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
