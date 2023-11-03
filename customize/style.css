@@ -304,16 +304,18 @@ outline: none; /* Remove the default focus border */
         font-size: 13px;
     }
     .preview-box{
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
     .preview-header{
         font-size: 13px;
     }
     .control-preview{
-        padding: 10px 5px;
+        padding: 10px 10px;
     }
     .customize-cont{
-        padding:10px 7px;
+        padding:10px 0;
         box-shadow:none;
     }
+    .result-header{
+        padding: 30px 10px;
