@@ -313,4 +313,7 @@ outline: none; /* Remove the default focus border */
     .control-preview{
         padding: 10px 0;
     }
-}
+    .customize-cont{
+        padding:10px 0;
+        box-shadow:none;
+    }
