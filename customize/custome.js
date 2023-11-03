@@ -19,10 +19,10 @@ let insetButton = document.getElementById('toggle-inset');
         const horizontal = horizontalInput.value + 'px';
         const vertical = verticalInput.value + 'px';
         const blur = blurInput.value + 'px';
-        const opacity = opacityInput.value;
+        const opacity = opacityInput.value + 'px';
         const color = colorInput.value;
         const insetProperty = inset ? 'inset ' : ''; // Include the 'inset' property based on the 'inset' variable
-        const boxShadow = `${insetProperty}${horizontal} ${vertical} ${blur} ${color}, 0 0 0 rgba(0, 0, 0, ${opacity})`;
+        const boxShadow = `${insetProperty}${horizontal} ${vertical} ${blur} ${opacity} ${color}`;
         box.style.boxShadow = boxShadow;
         console.log(boxShadow);
         document.getElementById('shadow-result').textContent = 'box-shadow: ' +  boxShadow + ';';
