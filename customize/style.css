@@ -264,6 +264,7 @@ outline: none; /* Remove the default focus border */
     position: absolute;
     display: flex;
     align-items: center;
+    padding-right: 30px !important;
 
 }
 .result-header{
