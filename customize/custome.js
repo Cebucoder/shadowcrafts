@@ -26,6 +26,10 @@ let insetButton = document.getElementById('toggle-inset');
         box.style.boxShadow = boxShadow;
         console.log(boxShadow);
         document.getElementById('shadow-result').textContent = 'box-shadow: ' +  boxShadow + ';';
+        document.getElementById('hrPX').textContent = horizontal;
+        document.getElementById('vrPX').textContent = vertical;
+        document.getElementById('brPX').textContent = blur;
+        document.getElementById('orPX').textContent = opacity;
     }
 
     horizontalInput.addEventListener('input', updateBoxShadow);
