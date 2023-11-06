@@ -216,6 +216,7 @@ outline: none; /* Remove the default focus border */
     height: 250px;
     background: #fff;
     border-radius: 10px;
+    border: .5px solid rgba(211, 211, 211, 0.238);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .preview-header{
