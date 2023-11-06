@@ -50,6 +50,7 @@ let insetButton = document.getElementById('toggle-inset');
         document.getElementById('brPX').textContent = blur;
         document.getElementById('orPX').textContent = opacity;
         document.getElementById('srPX').textContent = spread;
+        document.getElementById('clPX').textContent = color;
     }
 
 
