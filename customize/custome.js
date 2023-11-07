@@ -14,7 +14,9 @@ let insetButton = document.getElementById('toggle-inset');
     const blurInput = document.getElementById('blur');
     const opacityInput = document.getElementById('opacity');
     const colorInput = document.getElementById('color');
-    const spreadInput = document.getElementById('spread')
+    const spreadInput = document.getElementById('spread');
+
+
 
     function getColor(hex, opacity) {
         var rgb = hexToRgb(hex);
@@ -30,6 +32,13 @@ let insetButton = document.getElementById('toggle-inset');
               b: parseInt(result[3], 16)
           } : null;
       }   
+
+
+      function applyBoxShadow(boxShadow) {
+        box.style.boxShadow = boxShadow;
+        // Save the applied box shadow to local storage
+        localStorage.setItem('boxShadow', boxShadow);
+    }
 
     function updateBoxShadow() {
 
@@ -51,10 +60,10 @@ let insetButton = document.getElementById('toggle-inset');
         document.getElementById('orPX').textContent = opacity;
         document.getElementById('srPX').textContent = spread;
         document.getElementById('clPX').textContent = color;
+
     }
-
-
-   
+    
+    
 
     horizontalInput.addEventListener('input', updateBoxShadow);
     verticalInput.addEventListener('input', updateBoxShadow);

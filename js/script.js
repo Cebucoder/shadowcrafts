@@ -1,5 +1,13 @@
+let menuCont = document.getElementById('menu-cont');
+let MenuIconBtn = document.getElementById('menu-icon-btn');
+MenuIconBtn.addEventListener('click', () => {
+    menuCont.classList.toggle('toggle-menu-cont');
+});
+
+// Select all elements with the class "box"
 const boxes = document.querySelectorAll('.box');
 
+// Loop through each box and set its content to its index + 1
 boxes.forEach((box, index) => {
     box.innerHTML = '# ' + (index + 1);
 });
@@ -7,13 +15,16 @@ boxes.forEach((box, index) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Select all elements with the class "box"
     const boxes = document.querySelectorAll('.box');
 
+    // Function to copy the box-shadow style to the clipboard
     function copyBoxShadowStyle(event, index) {
         const box = event.currentTarget;
         const computedStyle = getComputedStyle(box);
         const boxShadowStyle = computedStyle.boxShadow;
 
+        // Create a temporary text area to copy the style
         const tempTextArea = document.createElement('textarea');
         tempTextArea.value = `box-shadow: ${boxShadowStyle};`;
         document.body.appendChild(tempTextArea);
@@ -21,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.execCommand('copy');
         document.body.removeChild(tempTextArea);
 
+        // Provide visual feedback (e.g., change the content)
         box.innerHTML = 'Copied!';
 
         setTimeout(() => {
@@ -86,6 +98,7 @@ document.addEventListener('keydown', (event) => {
 
 // get the url on the browser
 const currentURL = window.location.href;
+console.log(currentURL);
 document.getElementById('ShadowCraft').value = currentURL;
 
 // copy the link
@@ -114,8 +127,8 @@ copyLinkButton.addEventListener('click', () => {
     // Deselect the input field
     inputElement.setSelectionRange(0, 0);
 });
-
 console.log(
-    '%cHello Shadow Craft User!',
+    '%cHello ShadowCraft User',
     'background: black; color: white; font-size: 20px; padding: 10px;'
   );
+  
