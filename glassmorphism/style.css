@@ -296,7 +296,7 @@ outline: none; /* Remove the default focus border */
 }
 
 .glass-preview h1{
-    font-size: clamp(20px,8vw,50px) !important;
+    font-size: 50px;
     color: #fff;
     top: 30px;
     letter-spacing: 10px;
