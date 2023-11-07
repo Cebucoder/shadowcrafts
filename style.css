@@ -18,7 +18,8 @@ html{
     scroll-behavior: smooth;
 }
 .m-container{
-    max-width: 1265px;
+/*     max-width: 1265px; */
+    max-width: 1400px;
     position: relative;
     margin: auto;
     padding-top: 95px;
