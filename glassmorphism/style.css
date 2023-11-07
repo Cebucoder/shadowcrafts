@@ -330,6 +330,12 @@ outline: none; /* Remove the default focus border */
         width: 100%;
         min-width: 100%;
     }
+    .glass-gen{
+        padding: 25px 15px;
+    }
+    .glass-tools-cont div small{
+        margin-left: 5px;
+    }
 }
 
 @media (max-width:402px){
@@ -339,4 +345,5 @@ outline: none; /* Remove the default focus border */
     .glass-tools-cont label{
         font-size: 14px;
     }
+
 }
