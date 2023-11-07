@@ -20,6 +20,8 @@ Feel free to reach out if you have any questions or feedback. Happy designing!
 <img width="948" alt="Screenshot 2023-11-04 151450" src="https://github.com/Cebucoder/shadowcrafts/assets/55612034/410a629f-a8c5-4235-808e-f7be831fce55">
 <img width="950" alt="Screenshot 2023-11-04 151513" src="https://github.com/Cebucoder/shadowcrafts/assets/55612034/dca0c5d9-0e4a-4ca1-b588-b39566525f17">
 <img width="949" alt="Screenshot 2023-11-04 151524" src="https://github.com/Cebucoder/shadowcrafts/assets/55612034/4e2df68e-37f0-4215-af27-033b7489be79">
+<img width="948" alt="Screenshot 2023-11-07 135039" src="https://github.com/Cebucoder/shadowcrafts/assets/55612034/b46e3b9d-2e4f-4dbd-8f09-7c6c556f84a1">
+<img width="948" alt="Screenshot 2023-11-07 135002" src="https://github.com/Cebucoder/shadowcrafts/assets/55612034/87fe5a50-3bd7-40b1-8cf3-2e708ab4c15f">
 
 
 
