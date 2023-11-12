@@ -236,7 +236,7 @@ html{
 .scroll-top{
     position: fixed;
     bottom: -100%;
-    right: 30px;
+    right: 18px;
     width: 60px;
     height: 60px;
     display: flex;
@@ -268,7 +268,7 @@ html{
 }
 
 .show-scroll{
-    bottom: 40px;
+    bottom: 90px;
     visibility: visible;
     opacity: 1;
 }
