@@ -61,10 +61,10 @@ function UpdateGlassStyle(){
 
     // console.log(glassResBox);
 
-    if(glassBorderRadInput.value <= 0){
+    if(glassBorderRadInput.value == 0){
         
         document.getElementById('border-radius-css').style.display = "none";
-    }else if(glassBorderInput.value <=0){
+    }else if(glassBorderInput.value ==0){
         document.getElementById('glass-border-css').style.display = "none";
     }
     else{
