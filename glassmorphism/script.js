@@ -62,8 +62,11 @@ function UpdateGlassStyle(){
     // console.log(glassResBox);
 
     if(glassBorderRadInput.value <= 0 && glassBorderInput.value <=0){
-        document.getElementById('glass-borPX').style.display = "none"
-        document.getElementById('glass-borRadPX').style.display = "none"
+        document.getElementById('glass-borPX').style.display = "none";
+        document.getElementById('glass-borRadPX').style.display = "none";
+    }else{
+        document.getElementById('glass-borPX').style.display = "block";
+        document.getElementById('glass-borRadPX').style.display = "block";
     }
 
 }
