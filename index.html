@@ -83,77 +83,76 @@
 <body>
     
 
-    <header>
+<header>
 
-        <div class="m-container">
+    <div class="m-container">
 
-            <div class="navigation-bar">
+        <div class="navigation-bar">
+            
+            
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.shadowcrafts.website/shadow-craft_logo.png" alt="ShadowCraft Logo">
+                </a>
+            </div>
+    
+            <div class="menu-cont" id="menu-cont">
+                <div class="menu-cont-header">
+                    <h3>Tools</h3>
+                </div>
+                <a href="https://www.shadowcrafts.website/customize">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                    <li>Customize Box Shadow</li>
+                </a>
+                <a href="https://www.shadowcrafts.website/glassmorphism">
+                    <ion-icon name="color-wand-outline"></ion-icon>
+                    <li>Glassmorphism Generator</li>
+                </a>
+                <div class="menu-cont-footer">
+                    <small>ShadowCraft 2023 - <span id="Menuyear"></span></small>
+                    <script>
+                        let curDate = new Date();
+                        let Menuyear = curDate.getFullYear();
+                        document.getElementById('Menuyear').textContent = Menuyear;
+                    </script>
+                </div>
+            </div>
+            
+            <div class="share-menu-btn">
+                <div class="share" id="toggle-share-cont">
+                    <small >Share</small>
+                    <ion-icon name="share-outline"></ion-icon>
+                </div>
+                <div class="menu-nav-icon" id="menu-icon-btn">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+    
+            <!-- share-link -->
+            <div class="share-category" id="share-category">
                 
-               
-                <div class="logo">
-                    <a href="/">
-                        <img src="shadow-craft_logo.png" alt="">
-                    </a>
-                </div>
-        
-                <div class="menu-cont" id="menu-cont">
-                    <div class="menu-cont-header">
-                        <h3>Tools</h3>
+                <div class="share-link-holder">
+                    <div class="close-share-cont" id="close-share-cont">
+                        <ion-icon name="close"></ion-icon>
                     </div>
-                    <a href="./customize/">
-                        <ion-icon name="color-palette-outline"></ion-icon>
-                        <li>Customize Box Shadow</li>
-                    </a>
-                    <a href="./glassmorphism/">
-                        <ion-icon name="color-wand-outline"></ion-icon>
-                        <li>Glassmorphism Generator</li>
-                    </a>
-                    <div class="menu-cont-footer">
-                        <small>ShadowCraft 2023 - <span id="Menuyear"></span></small>
-                        <script>
-                            let curDate = new Date();
-                            let Menuyear = curDate.getFullYear();
-                            document.getElementById('Menuyear').textContent = Menuyear;
-                        </script>
+                    <h3>Thank you for sharing</h3>
+                    <div class="social-share">
+                        <span class="fb"><ion-icon name="logo-facebook"></ion-icon></span>
+                        <span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
+                        <span class="twit"><ion-icon name="logo-twitter"></ion-icon></span>
+                        <span class="linked"><ion-icon name="logo-linkedin"></ion-icon></span>
                     </div>
-                </div>
-                
-                <div class="share-menu-btn">
-                    <div class="share" id="toggle-share-cont">
-                        <small >Share</small>
-                        <ion-icon name="share-outline"></ion-icon>
+                    <div class="link-cont">
+                        <input type="text" readonly id="ShadowCraft">
+                        <span id="copy-Link"><ion-icon name="copy-outline"></ion-icon></span>
                     </div>
-                    <div class="menu-nav-icon" id="menu-icon-btn">
-                        <ion-icon name="menu"></ion-icon>
-                    </div>
+                    <small id="link-copied"></small>
                 </div>
-        
-                <!-- share-link -->
-                <div class="share-category" id="share-category">
-                    
-                    <div class="share-link-holder">
-                        <div class="close-share-cont" id="close-share-cont">
-                            <ion-icon name="close"></ion-icon>
-                        </div>
-                        <h3>Thank you for sharing</h3>
-                        <div class="social-share">
-                            <span class="fb"><ion-icon name="logo-facebook"></ion-icon></span>
-                            <span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
-                            <span class="twit"><ion-icon name="logo-twitter"></ion-icon></span>
-                            <span class="linked"><ion-icon name="logo-linkedin"></ion-icon></span>
-                        </div>
-                        <div class="link-cont">
-                            <input type="text" readonly id="ShadowCraft">
-                            <span id="copy-Link"><ion-icon name="copy-outline"></ion-icon></span>
-                        </div>
-                        <small id="link-copied"></small>
-                    </div>
-                </div>
-        
-                </div>
-                
+            </div>
+    </div>
+            
 
-    </header>
+</header>
  
        
     </div>
