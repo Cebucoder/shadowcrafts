@@ -71,7 +71,6 @@ header{
     width: 240px;
     cursor: pointer;
     position: relative;
-    z-index: 20;
 }
 .navigation-bar .logo img{
     width: 100%;
