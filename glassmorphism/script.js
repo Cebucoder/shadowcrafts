@@ -61,6 +61,11 @@ function UpdateGlassStyle(){
 
     // console.log(glassResBox);
 
+    if(glassBorderRadInput.value <= 0 && glassBorderInput.value <=0){
+        document.getElementById('glass-borPX').style.display = "none"
+        document.getElementById('glass-borRadPX').style.display = "none"
+    }
+
 }
 
 glassColorInput.addEventListener('input', UpdateGlassStyle);
