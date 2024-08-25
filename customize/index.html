@@ -83,76 +83,90 @@
     </head>
 <body>
 
-    <div class="navigation-bar">
-        <div class="logo">
-            <a href="/">
-                <img src="../shadow-craft_logo.png" alt="">
-            </a>
-        </div>
+    <header>
+
+        <div class="m-container">
+    
+            <div class="navigation-bar">
+                
+                
+                <div class="logo">
+                    <a href="/">
+                        <img src="../shadow-craft_logo.png" alt="">
+                    </a>
+                </div>
         
-        <div class="menu-cont" id="menu-cont">
-            <div class="menu-cont-header">
-                <h3>Tools</h3>
-            </div>
-            <a href="/customize">
-                <ion-icon name="color-palette-outline"></ion-icon>
-                <li>Customize Box Shadow</li>
-            </a>
-            <a href="/glassmorphism">
-                <ion-icon name="color-wand-outline"></ion-icon>
-                <li>Glassmorphism Generator</li>
-            </a>
-            <div class="menu-cont-footer">
-                <small>ShadowCraft 2023 - <span id="Menuyear"></span></small>
-                <script>
-                    let curDate = new Date();
-                    let Menuyear = curDate.getFullYear();
-                    document.getElementById('Menuyear').textContent = Menuyear;
-                </script>
-            </div>
-        </div>
+                <div class="menu-cont" id="menu-cont">
+                    <div class="menu-cont-header">
+                        <h3>Tools</h3>
+                    </div>
+                    <a href="./">
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                        <li>Customize Box Shadow</li>
+                    </a>
+                    <a href="./glassmorphism/">
+                        <ion-icon name="color-wand-outline"></ion-icon>
+                        <li>Glassmorphism Generator</li>
+                    </a>
+                    <div class="menu-cont-footer">
+                        <small>ShadowCraft 2023 - <span id="Menuyear"></span></small>
+                        <script>
+                            let curDate = new Date();
+                            let Menuyear = curDate.getFullYear();
+                            document.getElementById('Menuyear').textContent = Menuyear;
+                        </script>
+                    </div>
+                </div>
+                
+                <div class="share-menu-btn">
+                    <div class="share" id="toggle-share-cont">
+                        <small >Share</small>
+                        <ion-icon name="share-outline"></ion-icon>
+                    </div>
+                    <div class="menu-nav-icon" id="menu-icon-btn">
+                        <ion-icon name="menu"></ion-icon>
+                    </div>
+                </div>
         
-        <div class="share-menu-btn">
-            <div class="share" id="toggle-share-cont">
-                <small >Share</small>
-                <ion-icon name="share-outline"></ion-icon>
-            </div>
-            <div class="menu-nav-icon" id="menu-icon-btn">
-                <ion-icon name="menu"></ion-icon>
+                <!-- share-link -->
+                <div class="share-category" id="share-category">
+                    
+                    <div class="share-link-holder">
+                        <div class="close-share-cont" id="close-share-cont">
+                            <ion-icon name="close"></ion-icon>
+                        </div>
+                        <h3>Thank you for sharing</h3>
+                        <div class="social-share">
+                            <span class="fb"><ion-icon name="logo-facebook"></ion-icon></span>
+                            <span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
+                            <span class="twit"><ion-icon name="logo-twitter"></ion-icon></span>
+                            <span class="linked"><ion-icon name="logo-linkedin"></ion-icon></span>
+                        </div>
+                        <div class="link-cont">
+                            <input type="text" readonly id="ShadowCraft">
+                            <span id="copy-Link"><ion-icon name="copy-outline"></ion-icon></span>
+                        </div>
+                        <small id="link-copied"></small>
+                    </div>
+                </div>
+        </div>
+                
+    
+    </header>
+
+
+
+
+        <div class="about_con">
+            <div class="m-container">
+                <div class="about">
+                    <h1>Custom Box Shadow Craft</h1>
+                    <p>Shadow Craft, created by the talented individual Daniel Abellana, is a remarkable platform where you can easily replicate various styles of box shadows.<br><br> This innovative tool allows you to explore and experiment with different box shadow designs for your web projects. Shadow Craft was promising to be a valuable resource for web designers and developers seeking creative shadow solutions.</p>
+                </div>
             </div>
         </div>
 
-        <!-- share-link -->
-        <div class="share-category" id="share-category">
-            
-            <div class="share-link-holder">
-                <div class="close-share-cont" id="close-share-cont">
-                    <ion-icon name="close"></ion-icon>
-                </div>
-                <h3>Thank you for sharing</h3>
-                <div class="social-share">
-                    <span class="fb"><ion-icon name="logo-facebook"></ion-icon></span>
-                    <span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
-                    <span class="twit"><ion-icon name="logo-twitter"></ion-icon></span>
-                    <span class="linked"><ion-icon name="logo-linkedin"></ion-icon></span>
-                </div>
-                <div class="link-cont">
-                    <input type="text" readonly id="ShadowCraft">
-                    <span id="copy-Link"><ion-icon name="copy-outline"></ion-icon></span>
-                </div>
-                <small id="link-copied"></small>
-            </div>
-        </div>
-       
-    </div>
-
-
-    <div class="m-container">
-
-        <div class="about">
-            <h1>Custom Box Shadow Craft</h1>
-            <p>Shadow Craft, created by the talented individual Daniel Abellana, is a remarkable platform where you can easily replicate various styles of box shadows.<br><br> This innovative tool allows you to explore and experiment with different box shadow designs for your web projects. Shadow Craft was promising to be a valuable resource for web designers and developers seeking creative shadow solutions.</p>
-        </div>
+        <div class="m-container">
 
         <div class="customize-cont">
 
@@ -230,6 +244,7 @@
         
 
         </div>
+        </div>
 
 
         <div class="scroll-top" id="arrow-up">
@@ -237,6 +252,7 @@
         </div>
 
         <footer>
+            <div class="m-container">
             <div class="footer-content">
                 <div class="logo">
                     <img src="../shadow-craft_logo.png" alt="">
@@ -263,9 +279,10 @@
                 </script> 
                 All rights reserved | Created By Daniel Abellana
             </div>
+            <div>
         </footer>
-    </div>
-    
+
+
 </body>
 
 
