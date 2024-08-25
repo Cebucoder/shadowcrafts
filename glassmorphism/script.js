@@ -61,10 +61,13 @@ function UpdateGlassStyle(){
 
     // console.log(glassResBox);
 
-    if(glassBorderRadInput.value <= 0 && glassBorderInput.value <=0){
-        document.getElementById('glass-border-css').style.display = "none";
+    if(glassBorderRadInput.value <= 0){
+        
         document.getElementById('border-radius-css').style.display = "none";
-    }else{
+    }else if(glassBorderInput.value <=0){
+        document.getElementById('glass-border-css').style.display = "none";
+    }
+    else{
         document.getElementById('glass-border-css').style.display = "block";
         document.getElementById('border-radius-css').style.display = "block";
     }
