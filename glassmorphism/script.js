@@ -23,10 +23,10 @@ function getrgbaColor(hex, glassTransInput) {
 
 function UpdateGlassStyle(){
     const glassResBoxes = document.getElementsByClassName('glass-box-res');
-    const glassColor = glassColorInput.value;
+    const glassColor = glassColorInput.value ;
     const glassTrans = glassTransInput.value;
     const glassBlur = glassBlurInput.value;
-    const glassBorder = glassBorderInput.value;
+    const glassBorder = glassBorderInput.value + 'px';
     const glassBorRad = glassBorderRadInput.value + 'px';
     const glassRgbaColor = getrgbaColor(glassColor, glassTrans);
     const glassBackground = `${glassRgbaColor}`;
@@ -64,7 +64,7 @@ function UpdateGlassStyle(){
     if(glassBorderRadInput.value == 0){
         
         document.getElementById('border-radius-css').style.display = "none";
-    }else if(glassBorderInput.value ==0){
+    }else if(glassBorderInput.value == 0){
         document.getElementById('glass-border-css').style.display = "none";
     }
     else{
