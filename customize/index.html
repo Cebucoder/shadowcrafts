@@ -33,7 +33,7 @@
                 "@type": "Organization",
                 "name": "Daniel Abellana",
                 "url": "https://www.shadowcrafts.website/",
-                "logo": "https://www.shadowcrafts.website/A_logo.png"
+                "logo": "https://www.shadowcrafts.website/customize/customize-card.png"
               }
             }
         </script>
@@ -60,7 +60,7 @@
         <meta name="author" content="Daniel Llamedo Abellana">
         <meta property="og:title" content="Shadow Crafts Customize">
         <meta property="og:description" content="191 Custom Box Shadow Craft">
-        <meta property="og:image" content="https://www.shadowcrafts.website/A_logo.png">
+        <meta property="og:image" content="https://www.shadowcrafts.website/customize-card.png">
         <meta property="og:url" content="https://www.shadowcrafts.website/">
         <!-- twitter -->
         <meta name="twitter:card" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
@@ -69,13 +69,13 @@
         <meta name="twitter:title" content="Shadow Crafts Customize">
         <meta name="twitter:description" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
         Discover Shadow Craft, a visionary creation by the talented mind of Daniel Abellana. Shadow Craft offers an unparalleled platform to effortlessly emulate a wide array of box shadow styles. This innovative tool empowers you to explore and experiment with diverse box shadow designs, unleashing your creative potential for web projects. Excitingly, Shadow Craft, marking its debut as a promising resource for web designers and developers in pursuit of imaginative shadow solutions.">
-        <meta name="twitter:image" content="https://www.shadowcrafts.website/A_logo.png">
+        <meta name="twitter:image" content="https://www.shadowcrafts.website/customize/customize-card.png">
         <!-- linkedin -->
-        <meta property="og:image" content="https://www.shadowcrafts.website/A_logo.png">
+        <meta property="og:image" content="https://www.shadowcrafts.website/customize/customize-card.png">
         <meta property="article:author" content="https://www.linkedin.com/in/daniel-abellana/">
         <meta property="article:publisher" content="https://www.linkedin.com/in/daniel-abellana/">
         <!-- instagram -->
-        <meta property="og:image" content="https://www.shadowcrafts.website/A_logo.png">
+        <meta property="og:image" content="https://www.shadowcrafts.website/customize/customize-card.png">
         <meta property="og:title" content="Shadow Crafts Customize">
         <meta property="og:description" content="Introducing Shadow Craft: A Cutting-Edge Box Shadow Replication Tool
         Discover Shadow Craft, a visionary creation by the talented mind of Daniel Abellana. Shadow Craft offers an unparalleled platform to effortlessly emulate a wide array of box shadow styles. This innovative tool empowers you to explore and experiment with diverse box shadow designs, unleashing your creative potential for web projects. Excitingly, Shadow Craft, marking its debut as a promising resource for web designers and developers in pursuit of imaginative shadow solutions."><!--luck-->
@@ -181,8 +181,36 @@
         
                         <div class="control-content">
                             <label>Box Shadow Color</label>
+                            <!-- <input  onclick="toggle_picker()" type="color" id="color" value="#bababa"> -->
                             <input type="color" id="color" value="#bababa">
                             <div class="px" id="clPX">0</div>
+                            
+
+                            <!-- color picker -->
+                            <div class="color_picker_con">
+                                <div id="colorPickerContainer">
+                                  <canvas id="colorPicker" height="50"></canvas>
+                                  <div id="draggableLine"></div>
+                                </div>
+                                <div class="picker_res">
+                                  <div class="color_view">
+                                    <div id="selectedColor"></div>
+                                    <!-- <p><span id="colorCode">#000000</span></p> -->
+                                  </div>
+                          
+                                  <!-- HEX Code Input -->
+                                  <div class="cost_color">
+                                      <small>Color Code</small>
+                                      <div class="input_hex">
+                                          <input type="text" id="colorCode" value="#bababa" >
+                                          <button id="applyColor">Apply Color</button>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- color picker -->
+
+
                         </div>
                         <div class="control-content">
                             <label>Horizontal Position</label>
@@ -294,6 +322,7 @@
     <!-- End Google Tag Manager (noscript) -->
     
 <script src="../js/script.js"></script>
+<script src="/customize/color_picker.js"></script>
 <script src="/customize/custome.js"></script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Cebucoder" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee." data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     

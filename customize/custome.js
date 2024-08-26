@@ -13,7 +13,8 @@ let insetButton = document.getElementById('toggle-inset');
     const verticalInput = document.getElementById('vertical');
     const blurInput = document.getElementById('blur');
     const opacityInput = document.getElementById('opacity');
-    const colorInput = document.getElementById('color');
+    const colorInput = document.getElementById('color'); //input1
+    // const colorInput2 = document.getElementById('colorCode'); //input 2
     const spreadInput = document.getElementById('spread');
 
 
@@ -48,6 +49,7 @@ let insetButton = document.getElementById('toggle-inset');
         const opacity = opacityInput.value;
         const spread = spreadInput.value + 'px';
         const color = colorInput.value;
+        // const color2 = colorInput2.value;
         const insetProperty = inset ? 'inset ' : ''; // Include the 'inset' property based on the 'inset' variable
         const rgbaColor = getColor(color, opacity); // Convert hex to RGBA
         const boxShadow = `${insetProperty}${horizontal} ${vertical} ${blur} ${spread} ${rgbaColor}`;
@@ -60,6 +62,7 @@ let insetButton = document.getElementById('toggle-inset');
         document.getElementById('orPX').textContent = opacity;
         document.getElementById('srPX').textContent = spread;
         document.getElementById('clPX').textContent = color;
+        // document.getElementById('clPX').textContent = color2;
 
     }
     
@@ -71,6 +74,7 @@ let insetButton = document.getElementById('toggle-inset');
     opacityInput.addEventListener('input', updateBoxShadow);
     colorInput.addEventListener('input', updateBoxShadow);
     spreadInput.addEventListener('input', updateBoxShadow);
+    // colorInput2.addEventListener('input', updateBoxShadow);
 
     // Initial update
     updateBoxShadow();

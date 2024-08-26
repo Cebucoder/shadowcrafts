@@ -293,6 +293,35 @@ outline: none; /* Remove the default focus border */
 }
 
 
+
+
+
+
+/* ========= */
+.color_picker_con{ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px; max-width:520px; min-height:100px; background:#fff; margin:0 auto; text-align:center; border-radius:15px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; position: absolute; z-index: 9999;  display: none;}
+#colorPicker { cursor: pointer; border-radius: 5px; }
+#colorPickerContainer{ border-radius:5px !important; position: relative; }
+#colorPickerContainer canvas{width: 100%;}
+.picker_res{ display:flex; width: 100%; max-width: 450px; justify-content: space-between; margin-top: 20px; gap: 10px; }
+#selectedColor{ width:150px !important; height:60px !important; border-radius:10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: 1px solid #cccc; }
+#draggableLine { position: absolute; cursor: pointer; background-color: #ffff; width: 5px; border-radius: 5px; height: 55px; top: -3px; border: 1px solid; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px; }
+
+.cost_color{ text-align: left; display: flex; flex-direction: column; justify-content: space-between; }
+.cost_color small{ color: #555; }
+.cost_color{ text-align: left; display: flex; flex-direction: column; justify-content: space-between; }
+
+.input_hex{ display: flex; gap: 5px; height: 40px; }
+.input_hex input{width: 40%; border-radius: 5px; border: 1px solid rgba(253, 29, 29,0.6); padding: 0 10px;}
+#applyColor{ width:60%; background: rgb(253, 29, 29); background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%); color: #fff; cursor: pointer; border: none; border-radius: 5px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+/* ========= */
+
+
+
+
+
+
+
+
 @media (max-width:800px){
     .preview-box{
         width: 200px;
