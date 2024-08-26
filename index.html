@@ -45,6 +45,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.min.css">
         <link rel="icon" type="image/png" href="A_logo.png">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -392,6 +393,8 @@
     
         </div>
 
+        <div class="load_more_btn">Load More</div>
+
         </div>
 
 
@@ -449,6 +452,41 @@
 <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
+
+
+<script src="wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        new WOW().init();
+        // Hide all boxes initially
+        $(".box").addClass('hidden_box');
+        $(".box").attr("data-wow-delay", "2000ms");
+
+        // Show the first 16 boxes
+        $(".box").slice(0, 16).removeClass('hidden_box');
+        $(".box").slice(0, 16).addClass('wow fadeIn animated');
+
+        // On click of the Load More button
+        $(".load_more_btn").on('click', function(){
+            $(".box.hidden_box").slice(0, 16).removeClass('hidden_box');
+            $(".box.hidden_box").slice(0, 16).addClass('wow fadeIn animated');
+            console.log("Clicked!!");
+
+            // Check if there are any hidden boxes left
+            if ($(".box.hidden_box").length === 0) {
+                $(this).hide(); // Hide the button if all boxes are shown
+            }
+        });
+
+        // Hide the button initially if there are no hidden boxes
+        if ($(".box.hidden_box").length === 0) {
+            $(".load_more_btn").hide();
+        }
+    });
+</script>
+
 
 
 

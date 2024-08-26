@@ -264,6 +264,28 @@ header{
 .box:active{
     transform: scale(0.98);
 }
+.hidden_box{
+    display: none;
+}
+
+.load_more_btn {
+    max-width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    margin: 20px auto 50px;
+    transition: 0.3s;
+}
+.load_more_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .scroll-top{
     position: fixed;
